@@ -1,0 +1,30 @@
+STL
+
+sequence containers
+    - vector
+    - string
+    - dequeue
+Associative containers
+    - set
+    - multiset
+    - map
+    - multimap
+
+iterators
+    input iterators
+        read-only
+        read-only once
+    output iterators
+        write-only
+        written once
+    io iterators
+    forward iterators
+        both input and output capabilities
+        can read/write multiple times in the same location
+
+functor class
+    any class that overloads the () operator
+
+Note that there are Non STL standard containers
+
+
