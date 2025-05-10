@@ -25,6 +25,11 @@ void _time_type_test() {
     auto seconds = 1s;
     seconds++;
     std::cout << seconds << std::endl;
+    std::cout 
+        << "There are "
+        << std::chrono::seconds(1h)
+        << " in an hour"
+        << std::endl;
 }
 
 void _clock_test() {
@@ -37,9 +42,9 @@ void _clock_test() {
 }
 
 int main (int argc, char *argv[]) {
-    _clock_test();
+    //_clock_test();
     //_get_system_clock_info();
-    //_time_type_test();
+    _time_type_test();
     return 0;
 }
 
