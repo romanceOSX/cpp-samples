@@ -1,0 +1,6 @@
+--> https://en.cppreference.com/w/cpp/string
+
+A character is an object
+When threated sequentially it represents a text
+
+
