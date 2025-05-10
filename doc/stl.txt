@@ -26,5 +26,9 @@ functor class
     any class that overloads the () operator
 
 Note that there are Non STL standard containers
+    container adaptors are an example of these since they dont provide access
+    to the underlying iterators, and their interface is different
 
+Contiguous memory
+Node based
 
