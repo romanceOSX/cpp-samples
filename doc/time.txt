@@ -1,0 +1,40 @@
+--> https://en.cppreference.com/w/cpp/chrono#C-style_date_and_time_library
+
+clocks
+    consist of an epoch time (starting time point)
+    and a tick rate
+    ex. epoch of January 1 1970 and a tick every second
+time points
+    Duration of time that passed since an specific clock epoch
+    + clock's epoch
+    + duration
+durations
+    Span of times, a number of ticks
+    Ex. 42 seconds can be represented as 42 ticks of 1 second
+        + Rep
+        + Period
+    It just stores the number of ticks, the period is a compile-time
+    constant
+
+calendar dates
+time zone info
+
+clock
+    duration
+        time_point
+
+duration
+    type rep
+    type period
+    count() -> number of ticks
+
+time_point
+    takes a clock to get its
+        Clock::duration
+        Clock::duration::rep
+        Clock::duration::period
+    constructed by taking other's duration
+    
+    a clock normally passes in its duration
+Literals
+
