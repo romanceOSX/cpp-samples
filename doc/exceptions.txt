@@ -1,0 +1,28 @@
+Exception handling in c++
+    try... *catch...
+
+    The 'catch' part is refered to as the 'handler'
+
+stack unwinding
+    --> https://en.cppreference.com/w/cpp/language/throw
+    Once the exception object is constructed...
+    - An exception is thrown within the try...
+    - The exception is matched agains the handlers within the 'catche's
+    - If there is no match for a handler, then the stack unwinds and
+      proceeds to try to be in the context of an up-level try
+    - While that is happening the destructors of the automatic objects get
+      called
+    - If an expression is not caught, then std::terminate is called if the
+      program reaches the main function
+
+    It will 
+
+Exception objects
+    --> https://en.cppreference.com/w/cpp/language/exceptions#:~:text=Exception%20objects
+    This states the following
+        - objects are usually return by value
+        - they are catched by reference at the handler
+    This avoids unnecessary copying
+
+oh! look at the references, hella useful
+
