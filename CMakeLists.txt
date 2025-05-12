@@ -15,4 +15,5 @@ add_executable(out ${APP_SOURCES})
 add_subdirectory(${SRC_DIR}/iterators)
 add_subdirectory(${SRC_DIR}/containers)
 add_subdirectory(${SRC_DIR}/time)
+add_subdirectory(${SRC_DIR}/exceptions)
 
