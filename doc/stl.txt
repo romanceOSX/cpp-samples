@@ -32,3 +32,23 @@ Note that there are Non STL standard containers
 Contiguous memory
 Node based
 
+The Slicing problem 
+    --> https://en.wikipedia.org/wiki/Object_slicing
+    Basically, whenever we want to copy a subclass to a base class
+    the members from the derived class wont be copied, the problem
+    is that c++ performs calls to copies implicitly sometimes, so it's
+    hard to spot, such as when working with containers
+
+    A solution would be to make the copy operators virtual 
+        --> https://stackoverflow.com/questions/274626/what-is-object-slicing 
+
+    You cannot solve the slicing problems through virtual methods because it
+    is not allowed in the language
+
+
+Algorithms
+    find
+        find first or last occerence
+    count
+        count number of instances on a criteria
+
