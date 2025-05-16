@@ -1,8 +1,8 @@
 #include <iostream>
 #include <algorithm>
-#include <pthread.h>
 #include <vector>
 #include <type_traits>
+#include <iterator>
 
 template <typename T>
 void print_container(T& cont) {
@@ -59,10 +59,21 @@ void _test_container_sort() {
     print_container(v);
 }
 
+void _test_string_sorter() {
+    std::string s{"aabsbsbadfbfbaab"};
+    
+    for (auto it = std::begin(s); it != std::end(s); it++) {
+        for (auto next = std::next(it); next != end(s); next++) {
+            std::cout << "(" << *it << "," << *next << ")" << std::endl;
+        }
+    }
+}
+
 int main (int argc, char *argv[]) {
     //_count_test();
     //_test_container_sort();
-    _copy_test();
+    //_copy_test();
+    _test_string_sorter();
     return 0;
 }
 
