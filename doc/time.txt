@@ -28,6 +28,12 @@ duration
     type period
     count() -> number of ticks
 
+    A duration consists of the following template parameters
+        - Rep
+            Type for storing the number of ticks
+        - Period
+            Time in seconds from one tick to the next
+
 time_point
     takes a clock to get its
         Clock::duration
@@ -36,5 +42,11 @@ time_point
     constructed by taking other's duration
     
     a clock normally passes in its duration
+
 Literals
+    These literals define duration types
+    A duration can 
+        std::chrono::seconds(1) == 1s
+
+The only printable time is duration
 
