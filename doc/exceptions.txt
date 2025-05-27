@@ -25,4 +25,5 @@ Exception objects
     This avoids unnecessary copying
 
 oh! look at the references, hella useful
+--> https://www.drdobbs.com/when-and-how-to-use-exceptions/184401836
 
