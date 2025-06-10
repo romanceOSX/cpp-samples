@@ -1,0 +1,22 @@
+normal atomic operations
+    - load
+    - store
+    - read-modify-write operations
+
+memory order
+    roughly divided in 3
+        - load
+        - store
+        - read-modify-write
+
+std::atomic_bool
+    - load()
+    - read()
+    - exchange()
+        changes the value and retreives the previous one
+    - compare_exchange()
+        strong
+            performs the exchange only if a criteria is met, otherwise
+            it defaults to a value
+        weak
+            
