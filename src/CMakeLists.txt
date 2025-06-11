@@ -6,4 +6,5 @@ add_subdirectory(exceptions)
 add_subdirectory(stl)
 add_subdirectory(strings)
 add_subdirectory(atomics)
+add_subdirectory(io)
 
