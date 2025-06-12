@@ -1,0 +1,10 @@
+Streams formatting
+
+Formatting
+    flags
+        control stuff
+    precision
+        control precision
+    width
+        control width
+
