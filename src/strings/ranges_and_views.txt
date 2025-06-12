@@ -1,0 +1,9 @@
+Views
+    Views are ranges that are defined on another range and transform
+    such range via some algorithm or operation
+
+The algorithm is required to be lazy-loaded
+
+Ranges
+    --> https://en.cppreference.com/w/cpp/ranges.html
+    Generalization of algo's and iter libraries
