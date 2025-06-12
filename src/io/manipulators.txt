@@ -1,0 +1,9 @@
+--> https://en.cppreference.com/w/cpp/io/manip.html
+
+They are implemented as functions that only take one argument which is
+an iostream
+
+The overload that makes it work is the operator << taking an stream as the
+first argument and a pointer to a function of the signature of a manipulator
+as the second one
+
