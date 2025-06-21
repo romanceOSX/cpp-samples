@@ -7,4 +7,5 @@ add_subdirectory(stl)
 add_subdirectory(strings)
 add_subdirectory(atomics)
 add_subdirectory(io)
+add_subdirectory(filesystem)
 
