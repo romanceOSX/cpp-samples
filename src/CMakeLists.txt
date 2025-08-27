@@ -11,4 +11,5 @@ add_subdirectory(io)
 add_subdirectory(filesystem)
 add_subdirectory(ranges)
 add_subdirectory(enums)
+add_subdirectory(constexpr)
 
