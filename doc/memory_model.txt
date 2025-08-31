@@ -1,0 +1,17 @@
+--> C. 5 Concurrency in Action
+
+Memory model
+    There are two aspects to it:
+        - The structural
+        - The concurrency
+
+Modification order
+    An object has a modification order that comprises all the writes to such object
+    in the execution of the program
+    If we use atomics, it is up to the compiler that such synchronization is taken place
+
+
+DOUBTS
+    - So does that mean that atomics are compile-time memory synchronization
+      in contrast to using locks?
+
