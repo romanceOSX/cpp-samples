@@ -50,3 +50,25 @@ std::atomic_bool
             it defaults to a value
         weak
             
+Memory model, an intuition
+--> https://www.youtube.com/watch?v=OyNG4qiWnmU
+Atomics operations are all about synnchronizing non-atomic memory
+Memory orders
+    - sequentially consistent
+    - acquire
+    - release
+    - relaxed
+
+
+mutex.lock()
+    acquires memory updates from other threads
+    Not visible to locked threads until they call lock
+
+mutex.unlock()
+    publishes updates to other threads
+    Not visible to other threads until they lock
+
+Memory order
+    --> https://cppreference.com/w/cpp/atomic/memory_order.html
+    How memory accesses jk
+
