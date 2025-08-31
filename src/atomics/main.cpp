@@ -64,8 +64,27 @@ void _test_atomic_flag() {
     std::cout << f3 << std::endl;
 }
 
+void test_atomics() {
+    std::atomic_flag f{ATOMIC_FLAG_INIT};
+    std::cout << std::atomic_char::is_always_lock_free << std::endl;
+}
+
+void test_atomic_bool() {
+    std::atomic_bool b;
+    bool res = b.load(std::memory_order_acquire);
+    std::cout << std::format("Value of bool: {}", res) << std::endl;
+    b.store(true);
+    res = b.exchange(false, std::memory_order_acquire);
+    std::cout << std::format("Value of bool: {}", res) << std::endl;
+    b.store(true);
+    res = b.exchange(false, std::memory_order_acquire);
+    std::cout << std::format("Value of bool: {}", res) << std::endl;
+}
+
 int main(int argc, char* argv[]) {
     //_test_atomic_flag();
-    _test_spin_lock_mutex();
+    //_test_spin_lock_mutex();
+    //test_atomics();
+    test_atomic_bool();
 }
 
