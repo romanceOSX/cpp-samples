@@ -9,7 +9,37 @@ memory order
         - store
         - read-modify-write
 
+atomic_flag
+    - test_and_set()
+    - clear()
+    ** c++ introduced way more operations
+
 std::atomic_bool
+    - store() 
+        this would be clear() in the atomic flag
+    - exchange()
+        this would be the test_and_set() in atomic flag
+    - load()
+        explicit non-modigying query
+    - store()
+        direct write
+    - compare_exchange_weak/strong
+        - strong
+            It is a multi purpose signature
+            It compares to an expected value
+            if the value is equal, it stores the other provided value
+                and returns true
+            if it is not equal, it does not stores the value
+                returns false
+                returns the current value through the provided value argument
+        - weak
+            same as strong but might fail even if the value provided
+            was equal to the stored one, this might happen due to
+            supurious failours, such as when a runtime can't guarantee
+            the atomic behaviour
+            NOTE: but why do we need this if the strong version exists?
+
+// old docs
     - load()
     - read()
     - exchange()
