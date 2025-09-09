@@ -32,6 +32,19 @@ void _time_type_test() {
         << std::endl;
 }
 
+void _calendar_test() {
+    auto april = std::chrono::April;
+    auto month = std::chrono::month(24);
+    std::cout 
+        << "Month: "
+        << month 
+        << std::endl;
+    std::cout 
+        << "April: "
+        << april 
+        << std::endl;
+}
+
 void _clock_test() {
     const auto system_time{std::chrono::system_clock::now()};
     const auto start{std::chrono::steady_clock::now()};
@@ -44,7 +57,8 @@ void _clock_test() {
 int main (int argc, char *argv[]) {
     //_clock_test();
     //_get_system_clock_info();
-    _time_type_test();
+    //_time_type_test();
+    _calendar_test();
     return 0;
 }
 
